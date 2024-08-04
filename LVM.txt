@@ -21,3 +21,4 @@ pvremove /dev/pvname
 #partprobe  لاعادة تسميع التعديل ع السيرفر 
 * to resize lv .....
 lvextend -r -L size /dev/vgname/lvname
+rsssssssssssssssssssssssssssssssssssss
