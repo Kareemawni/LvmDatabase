@@ -1,0 +1,23 @@
+Logical Volume Manager (lvm)
+fdisk / diskname 
+part of disk and type 
+1.pvcreate /diskname
+2.vgcreate vgname /diskname
+3.lv create -n..(name) -L space vgname
+4.fileformate ........ 
+mkfs.xfs /dev/mapper/vg_lv
+5.new dir
+mkdir namedir
+mount /dev/mapper/vg-lv  namedir
+6. save bas in vi /etc/fstab 
+7. rebook to cheak system file 
+8. to remove :-
+.unmount namedir
+lvremove /dev/vgname/lvname
+vgremove /dev/vgname
+pvremove /dev/pvname 
+
+
+#partprobe  لاعادة تسميع التعديل ع السيرفر 
+* to resize lv .....
+lvextend -r -L size /dev/vgname/lvname

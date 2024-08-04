@@ -1,0 +1,15 @@
+pvcreate /dev/sdb1
+    vgcreate vgvar /dev/sdb1
+    lvcreate -n lvvar -L +9.5GB vgvar
+    lvs
+    mkdir /root/var
+    mkfs.xfs /dev/mapper/vgvar-lvvar
+    mount /dev/mapper/vgvar-lvvar /root/var
+    df -h
+    vi /etc/fstab
+   mount -a
+    cp /var/* /root/var/
+    cp -r /var/* /root/var/
+    ls -all /root/var/
+   mkdir /root/var/ftp/pub/dvd
+   192.168.1.9

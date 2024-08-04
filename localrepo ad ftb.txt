@@ -1,0 +1,16 @@
+*to creat localrepos**
+ # to enter yum.repos.d/     cd /yum.repos.d/  
+ #to see all repos           ls 
+ 1.creat localrepo
+ vim local.repo 
+ 
+ [Baseurl]
+ name= 
+ baseurl
+ gbgcheack
+ [AppStream]
+ name:	
+ baseurl :
+ enable=
+ gpgcheack=
+ #to disconnet to iso
